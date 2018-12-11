@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/table">
+
+    <TextView
+        android:id="@+id/DealerWinLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DealerHand1"
+        android:layout_toStartOf="@+id/DealerHand2"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <GridView
+        android:id="@+id/Deck"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/DealerHand1"
+        android:layout_toStartOf="@+id/DealerHand1" />
+
+    <GridView
+        android:id="@+id/DealerHand1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="31dp"
+        android:layout_toEndOf="@+id/Player2Hand1"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp"
+        android:stretchMode="columnWidth" />
+
+    <GridView
+        android:id="@+id/DealerHand2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/DealerHand1"
+        android:layout_toEndOf="@+id/DealerHand1"
+        android:paddingLeft="2dp"
+        android:paddingRight="5dp"
+        android:stretchMode="columnWidth" />
+
+    <GridView
+        android:id="@+id/Player1Hand1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/Hit"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="100dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="2dp"
+        android:stretchMode="columnWidth" />
+
+    <GridView
+        android:id="@+id/Player1Hand2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/Split"
+        android:layout_alignTop="@+id/Player1Hand1"
+        android:layout_marginStart="11dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="18dp"
+        android:stretchMode="columnWidth" />
+
+    <GridView
+        android:id="@+id/Player2Hand1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/Player1Hand2"
+        android:layout_toEndOf="@+id/Player1Hand2"
+        android:paddingLeft="18dp"
+        android:paddingRight="2dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:stretchMode="columnWidth" />
+
+    <GridView
+        android:id="@+id/Player2Hand2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/Player2Hand1"
+        android:layout_toEndOf="@+id/Player2Hand1"
+        android:paddingLeft="2dp"
+        android:paddingRight="18dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:stretchMode="columnWidth" />
+
+    <GridView
+        android:id="@+id/Player3Hand1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/Player2Hand2"
+        android:layout_toStartOf="@+id/Player3Hand2"
+        android:paddingLeft="18dp"
+        android:paddingRight="2dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:stretchMode="columnWidth" />
+
+    <GridView
+        android:id="@+id/Player3Hand2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/Player3Hand1"
+        android:layout_toStartOf="@+id/Player4Hand1"
+        android:paddingLeft="2dp"
+        android:paddingRight="18dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:stretchMode="columnWidth" />
+
+    <GridView
+        android:id="@+id/Player4Hand1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/Player3Hand2"
+        android:layout_toStartOf="@+id/Player4Hand2"
+        android:paddingLeft="18dp"
+        android:paddingRight="2dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:stretchMode="columnWidth" />
+
+    <GridView
+        android:id="@+id/Player4Hand2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Player4Hand1"
+        android:layout_marginEnd="70dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="18dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:stretchMode="columnWidth" />
+
+    <TextView
+        android:id="@+id/Player3WinLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Player3Hand1"
+        android:layout_below="@+id/Player1Hand2"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/Player1WinLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Player1Hand1"
+        android:layout_below="@+id/Player1Hand2"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/Player2WinLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Player2Hand1"
+        android:layout_below="@+id/Player1Hand2"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/Player4WinLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Player4Hand1"
+        android:layout_below="@+id/Player1Hand2"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/Player1Bet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Player1Hand1"
+        android:layout_alignStart="@+id/Player1Hand1"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/Player2Bet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Player1Hand1"
+        android:layout_alignStart="@+id/Player2Hand1"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/Player3Bet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Player1Hand1"
+        android:layout_alignStart="@+id/Player3Hand1"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/Player4Bet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Player1Hand1"
+        android:layout_alignStart="@+id/Player4Hand1"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/Hit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/Hit" />
+
+    <Button
+        android:id="@+id/Double2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/Double"
+        android:text="@string/Double2"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/Split"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/Hit"
+        android:text="@string/Split" />
+
+    <Button
+        android:id="@+id/Stand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/Stand" />
+
+    <Button
+        android:id="@+id/Double"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/Player3Hand2"
+        android:text="@string/Double" />
+
+    <Button
+        android:id="@+id/Bet1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/giton_black"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/Bet2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/Bet1"
+        android:layout_below="@+id/Bet1"
+        android:background="@drawable/giton_blue"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/Bet3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/Bet4"
+        android:layout_toEndOf="@+id/Bet1"
+        android:background="@drawable/giton_red"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/Bet4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/Bet2"
+        android:layout_toEndOf="@+id/Bet1"
+        android:background="@drawable/giton_white"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/ClearBet"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/Bet2"
+        android:layout_below="@+id/Bet2"
+        android:background="@drawable/clear" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/Add" />
+
+    <Button
+        android:id="@+id/Remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Add"
+        android:text="@string/Remove" />
+
+</RelativeLayout>

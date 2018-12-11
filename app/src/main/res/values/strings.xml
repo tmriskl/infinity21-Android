@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Infinity21</string>
+    <string name="Hit">Hit</string>
+    <string name="Hit1">Hit1</string>
+    <string name="Hit2">Hit2</string>
+    <string name="Split">Split</string>
+    <string name="Double">Double</string>
+    <string name="Double1">Double1</string>
+    <string name="Double2">Double2</string>
+    <string name="Fold">Fold</string>
+    <string name="Stand">Stand</string>
+    <string name="NewGame">New Game</string>
+    <string name="Win">Win</string>
+    <string name="Lose">Lose</string>
+    <string name="Host">Host</string>
+    <string name="Join">Join</string>
+    <string name="Delete">Delete</string>
+    <string name="Wins">Wins:</string>
+    <string name="Losses">Losses:</string>
+    <string name="Balance">Balance:</string>
+    <string name="Add">Add Player</string>
+    <string name="Remove">Remove Player</string>
+</resources>
