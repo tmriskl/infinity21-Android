@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/open_screen">
+
+    <TextView
+        android:id="@+id/wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Wins"
+        android:layout_alignBottom="@+id/Wins"
+        android:layout_alignStart="@+id/losses"
+        android:fontFamily="monospace"
+        android:text="@string/Wins"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Balance"
+        android:layout_alignBottom="@+id/Balance"
+        android:layout_toStartOf="@+id/wins"
+        android:fontFamily="monospace"
+        android:text="@string/Balance"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/losses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Delete"
+        android:layout_alignEnd="@+id/Join"
+        android:fontFamily="monospace"
+        android:text="@string/Losses"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Losses"
+        android:layout_alignTop="@+id/Delete"
+        android:fontFamily="monospace"
+        android:text="@string/Wins"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Losses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Delete"
+        android:layout_toEndOf="@+id/losses"
+        android:fontFamily="monospace"
+        android:text="@string/Losses"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/balance"
+        android:fontFamily="monospace"
+        android:text="@string/Balance"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/CardBack"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/card_back_black"
+        android:text="@string/Delete"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Join"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/Host"
+        android:layout_alignBottom="@+id/Host"
+        android:layout_marginEnd="28dp"
+        android:layout_toStartOf="@+id/Host"
+        android:background="@drawable/card_back_black"
+        android:text="@string/Join"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/Host"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/card_back_black"
+        android:text="@string/Host"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/CardBack"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/Host"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="66dp"
+        android:background="@drawable/card_back_black"
+        android:rotation="270" />
+
+</RelativeLayout>
